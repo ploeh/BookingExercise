@@ -74,6 +74,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\BookingDatabase.mdf" />
+    <Content Include="App_Data\BookingDatabase_log.ldf">
+      <DependentUpon>BookingDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
