@@ -16,6 +16,9 @@ namespace Ploeh.Samples.BookingApi
                 name: "DefaultAPI",
                 routeTemplate: "{controller}/{id}",
                 defaults: new { Controller = "Home", Id = RouteParameter.Optional });
+
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
+                new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver();
         }
     }
 }
