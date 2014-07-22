@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Reservations] (
-    [Id]       INT                NOT NULL,
+    [Id]       INT                NOT NULL IDENTITY,
     [Date]     DATETIMEOFFSET (7) NOT NULL,
     [Name]     NVARCHAR (50)      NOT NULL,
     [Email]    NVARCHAR (50)      NOT NULL,
